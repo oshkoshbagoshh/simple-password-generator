@@ -1,8 +1,10 @@
+/* UNIVERSAL  */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 
 html,
 body,
@@ -14,9 +16,10 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #c1d1e1;
 }
 
+/* Wrapper class */
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
@@ -117,6 +120,9 @@ button[disabled] {
   resize: none;
   overflow: hidden;
 }
+
+
+
 
 @media (max-width: 690px) {
   .btn {
