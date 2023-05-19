@@ -110,4 +110,4 @@ The error message is related to the "textarea" element in HTML having an attribu
 
 Here is a screenshot of the issue:
 
-![error screenshot](/1.%20Homework/aj-password-generator/aj_develop/simple-password-generator/Develop/assets/images/issue1.png)
+![error screenshot](./Develop/assets/images/issue1.png)
