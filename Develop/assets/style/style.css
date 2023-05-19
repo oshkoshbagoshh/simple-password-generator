@@ -122,9 +122,9 @@ button[disabled] {
 }
 
 
+/* iPhone media queries */
 
-
-@media (max-width: 690px) {
+@media (max-width: 812px) {
   .btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
@@ -136,8 +136,12 @@ button[disabled] {
   }
 }
 
+
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
+    flex-wrap: wrap;
+    color: aqua;
   }
 }
+
