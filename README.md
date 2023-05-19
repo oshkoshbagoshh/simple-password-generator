@@ -42,16 +42,6 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
 
-## Table of Contents (Optional)
-
-<!-- If your README is long, add a table of contents to make it easy for users to find what they need. -->
-
-- [Installation](#installation)
-- [Mockup](#mockup)
-<!-- - [Credits](#credits) -->
-- [Issues] (#Issue)
-- [License](#license)
-
 ## Installation
 
 All that is required is Javascript, HTML, and CSS. 
