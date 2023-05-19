@@ -109,41 +109,109 @@ if (isUpperCase || isLowerCase || isNumSet || isSpecialChar) {
 console.log(userCharacterSet);
 
 
-// // Assignment Code
-var generateBtn = document.querySelector("#generate");
+//select random characters from the userCharacterset
+
+// function lengthValidation () {
+
+//   for (var i = 0;i<passwordLength;i++) {
+
+//     var randomCharacter = userCharacterSet[Math.floor(Math.random() * userCharacterSet.length)];
+  
+
+//   return randomCharacter;
+//     console.log(randomCharacter); 
+//   };
 
 
-// console.log(generateBtn);
+// }  else if  {
+//     console.log("Please pick at least 1 character set");
+//     generatePassword();
+//   }
+// } 
+// }else {
+// //   alert("Please enter a number between 8 and 128")
+//   generatePassword();
+
+
+//   generatePassword()
+
+
+// // Generate the password
+// var password = "";
+// for (var i = 0;i < passwordLength;i++) {
+
+//   var randomIndex = Math.floor(Math.random() * userCharacterSet.length);
+//   password += userCharacterSet[randomIndex];
+
+// }
+
+
+// console.log("Generated password: ", password);
+
+// } else {
+//   console.log("Please select at least one character set.");
+// } else {
+//   console.log("please enter a number between 8 and 128");
+// }
+
+
+
+// // for (var i = 0;i<passwordLength;i++) {
+
+// //   var randomCharacter = userCharacterSet[Math.floor(Math.random() * userCharacterSet.length)];
+
+// //   console.log(randomCharacter); 
+// // }
+
+
+// // // Assignment Code
+// var generateBtn = document.querySelector("#generate");
+
+
+// // console.log(generateBtn);
+// // // log to the console
+
+
+
+
+// // // Write password to the #password input
+// function writePassword() {
+  
+//   var password = generatePassword();
+//   var passwordText = document.querySelector("#password"); // from the text area 
+
+//   passwordText.value = password;
+//   console.log(passwordText.textContent);
+
+// };
 // // log to the console
 
 
-
-
-// // Write password to the #password input
-function writePassword() {
-  
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password"); // from the text area 
-
-  passwordText.value = password;
-  console.log(passwordText.textContent);
-
-}
-// log to the console
-
-
-// // Add event listener to generate button
+// // // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-console.log(generateBtn.addEventListener("click", writePassword));
+// console.log(generateBtn.addEventListener("click", writePassword));
 
-function generatePassword(params) {
-  return "pasword";
+// function generatePassword(params) {
+//   return "pasword";
   
   
-}
+// }
 
- console.log("end of the program");
-
-
+//  console.log("end of the program");
 
 
+
+
+// var password = "";
+//     for (var i = 0; i < passwordLength; i++) {
+//       var randomIndex = Math.floor(Math.random() * userCharacterSet.length);
+//       password += userCharacterSet[randomIndex];
+//     }
+
+//     console.log("Generated password:", password);
+//   } else {
+//     console.log("Please select at least one character set.");
+//   }
+// } else {
+//   console.log("Please enter a number between 8 and 128.");
+// }

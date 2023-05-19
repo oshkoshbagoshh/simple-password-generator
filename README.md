@@ -6,13 +6,17 @@ This web application is a simple password generator that generates dynamically c
 ## Description
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-<!-- TODO: -->
+<!-- 
+TODO:
 - What was your motivation?
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
 - What problem does it solve?
-- What did you learn?
+- What did you learn? -->
+The goal was to create an application that would display a password of random characters for the user.
 
+After some trial and error, I got the the randomization aspects figured out. This was done by creating different arrays with the character sets chosen by the user. 
+The main challenge I had was working with changing the HTML attributes to actually write the content into the site, but I was able to conduct validation on all of the different steps, 
+so that the correct password is generated, logged to the console, and displayed to the user via a window.
 
 ## User Story 
 AS AN employee with access to sensitive data
@@ -63,19 +67,18 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ![alt text](./Develop/assets/images/03-javascript-homework-demo.png)
 
-## Credits
+<!-- ## Credits
 
 List your collaborators, if any, with links to their GitHub profiles.
 
 If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
 
-If you followed tutorials, include links to those here as well.
+If you followed tutorials, include links to those here as well. -->
 
 ## License
 
 <!-- The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
  -->
----
 
 <!-- 🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections. -->
 
@@ -96,3 +99,13 @@ Badges aren't necessary, but they demonstrate street cred. Badges let other deve
 ## Tests
 
 <!-- Go the extra mile and write tests for your application. Then provide examples on how to run them here. -->
+
+## Issues / Bugs
+
+Unable to write to the text area as planned, so I have the password currently showing up in a window alert.
+
+The error message is related to the "textarea" element in HTML having an attribute of readonly, so I am working on changing this attribute from the script in future versions.
+
+Here is a screenshot of the issue:
+
+![error screenshot](/1.%20Homework/aj-password-generator/aj_develop/simple-password-generator/Develop/assets/images/issue1.png)
