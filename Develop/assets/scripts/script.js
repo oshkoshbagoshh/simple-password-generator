@@ -44,52 +44,71 @@ var lowercaseLetters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n',
 var uppercaseLetters = ['A','B','C',"D","E","F","G","H","I","J", "K", "L", "M", "N", "O", "P","Q","R","S","T","U","V","W","X","Y","Z"];
 var num_set = [1,2,3,4,5,6,7,8,9,0];
 var special_char = ['!', '#', "$", "%", "&", "@", "%","&", "|", "^", "_",];
-console.log(lowercaseLetters);
-console.log(uppercaseLetters);
-console.log(num_set);
-console.log(special_char);
 
-
-console.log("This is the combined set:"+lowercaseLetters + uppercaseLetters + num_set+ special_char);
-
-var all_characters = (lowercaseLetters+ uppercaseLetters + num_set + special_char);
-console.log(all_characters);
-
-console.log(typeof all_characters);
-console.log(all_characters.length);
-
-var length_of_string = all_characters.length;
-console.log(length_of_string);
-
-// print the string indexes
-
-
-// 142 total combined characters
-
-
-// turn the strings into an array
-
-// function password_sets_array () {
-//   var password_st_array_ = (lowercaseLetters + uppercaseLetters + special_char + num_set);
-
-//   console.log(password_st_array_);
-
-//   var arraySet1 = password_set_1.split(",");// lower and uppercase
-//   console.log(arraySet1);
-  
+var userCharacterSet = [];
 
 
 
-var password_set_1 = lowercaseLetters + uppercaseLetters;
-console.log(password_set_1);
+// console.log(lowercaseLetters);
+// console.log(uppercaseLetters);
+// console.log(num_set);
+// console.log(special_char);
 
-var arraySet1 = password_set_1.split(",");// lower and uppercase
-console.log(arraySet1);
 
-// function clickTheButton () {
-//   window.prompt ("Please press the button to generate a password.");
+// console.log("This is the combined set:"+lowercaseLetters + uppercaseLetters + num_set+ special_char);
 
-// }
+var combined_set = (lowercaseLetters + uppercaseLetters + num_set + special_char);
+console.log(" the length of the set is :" + combined_set.length);
+
+//set password length with window prompt
+var passwordLength = parseInt(window.prompt("enter a number between 8 and 128"));
+console.log(passwordLength);
+
+//number validation - between 8 and 128
+
+if (passwordLength >= 8 && passwordLength <= 128) {
+
+  // console.log("passwordLength");
+
+  var isUpperCase = confirm("Would you like Upper Case?")
+// console.log(isUpperCase);
+  var isLowerCase = confirm("Would you like Lower Case?")
+  // console.log(isLowerCase);
+  var isNumSet = confirm("How about numbers?")
+  // console.log(isNumSet);  
+  var isSpecialChar = confirm("...and special characters??")
+  // console.log(isSpecialChar);
+}
+
+//Validation 
+if (isUpperCase || isLowerCase || isNumSet || isSpecialChar) {
+
+  window.alert("the user selected at least one set)");
+  // console.log("The user selected at least one set.");
+}  
+
+  // use concat to combinethe different sets
+
+  if (isUpperCase) {
+    userCharacterSet = userCharacterSet.concat(uppercaseLetters);
+    // return(userCharacterSet2);
+
+} else if (isLowerCase) {
+
+    userCharacterSet = userCharacterSet.concat(lowercaseLetters);
+    // return(userCharacterSet3);
+
+} else if (isNumSet) {
+  userCharacterSet = userCharacterSet.concat(num_set);
+
+} else if (isSpecialChar) {
+  userCharacterSet = userCharacterSet.concat(special_char);
+};
+
+
+console.log(userCharacterSet);
+
+
 // // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
